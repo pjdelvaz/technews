@@ -1,0 +1,338 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+  
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: #000;
+    /* Pattern from https://www.heropatterns.com/ */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #1E272E;
+    color: #FFF;
+}
+  
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+  
+ul {
+    list-style: none;
+}
+  
+/* Responsive Button */
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #FFF;
+    font-size: 15px;
+    border: 1px solid #FFF;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Navigation */
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    padding: 20px 0px;
+}
+
+.nav-main > .nav-brand {
+    width: 50px;
+}
+
+/* Left Nav */
+.nav-menu-left {
+    display: flex;
+}
+
+.nav-menu-left > li {
+    padding: 10px;
+}
+
+.nav-menu-left a {
+    padding: 2px;
+}
+
+.nav-menu-left a:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+/* HR */
+hr {
+    margin: 10px 0px;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 550px;
+    /* background: url("../img/showcase2.jpg") no-repeat center center/cover; */
+    background-image: url("../img/showcase2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+
+    padding: 0px 15px 50px 15px;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.header > h2,
+.header > p {
+  margin-bottom: 10px;
+}
+
+.header > .btn {
+    margin-top: 20px;
+}
+
+/* News Cards One and Two */
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    margin: 70px 0px;
+}
+
+.news-cards img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.news-cards a {
+    padding-top: 10px;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+/* Card Banner One */
+.cards-banner-one {
+    width: 100%;
+    height: 350px;
+    background: url("../img/tech-red.jpg");
+    margin-bottom: 40px;
+}
+
+.cards-banner-one > .content {
+    width: 40%;
+    padding: 90px 0px 0px 30px;
+}
+
+.cards-banner-one p,
+.cards-banner-two p {
+  margin: 10px 0px 20px 0px;
+}
+
+/* Card Banner Two */
+.cards-banner-two {
+    width: 100%;
+    height: 350px;
+    background: url(../img/image-five.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards-banner-two > .content {
+    width: 50%;
+    padding: 100px 0px 0px 30px;
+}
+
+/* Follow */
+.social {
+    margin: 50px;
+}
+
+.social > p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social > .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    margin: 0px 30px;
+    padding-bottom: 3px;
+}
+
+.social a:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+.social i {
+    font-size: 3rem;
+}
+
+/* Footer Links */
+.footer-links {
+    background: #2F3640;
+    font-size: 14px;
+    padding: 35px 0px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.footer-container > ul {
+    margin: 0px auto;
+}
+
+.footer-container li {
+    line-height: 2.8;
+}
+
+.footer-container a:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+.footer {
+    color: #FFF;
+    padding: 20px 0px;
+    text-align: center;
+}
+  
+/* Media Query 800px */
+@media (max-width: 800px) {
+    /* Responsive Button */
+    .menu-btn {
+        display: block;
+    }
+    
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    /* Left Nav */
+    .nav-menu-left {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: #2F3640;
+        width: 50%;
+        height: 100%;
+        border-right: #CCC 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .show {
+        transform: translateX(-20px);
+    }
+
+    .nav-menu-left > li {
+        padding: 20px;
+        border-bottom: 1px solid #CCC;
+    }
+
+    .nav-menu-left > li:last-child {
+        border-bottom: 0px;
+    }
+
+    /* Right Nav */
+    .nav-menu-right {
+        margin-right: 60px;
+    }
+
+    /* News Cards One and Two */
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Card Banner One and Two */
+    .cards-banner-one > .content,
+    .cards-banner-two > .content {
+        width: 80%;
+    }
+
+    /* Footer Links */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Query 560px */
+@media (max-width: 560px) {
+    /* Right Nav */
+    .nav-menu-right {
+        padding-right: 10px;
+    }
+    
+    /* News Cards One and Two */
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Card Banner One and Two */
+    .cards-banner-one > .content,
+    .cards-banner-two > .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    /* Footer Links */
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container > ul {
+        text-align: center;
+    }  
+}
