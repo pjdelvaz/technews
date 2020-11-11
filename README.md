@@ -1,1 +1,1 @@
-# technews
+Tech News
